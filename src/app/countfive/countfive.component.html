@@ -1,0 +1,27 @@
+<p>countfive works!</p>
+
+<form>
+    <input type="text" #t1 name="name">
+    <input type="text" #t2 name="age">
+    <button type="button" #bt1 (click)="sharksAdd(t1.value,t2.value)" >
+        Click to show
+    </button>
+
+</form>
+
+<h1>
+   <ul>
+       <li *ngFor="let shark of sharks">
+           {{shark.name}}
+           {{shark.age}}
+       </li>
+   </ul>
+</h1>
+
+
+<ul *ngFor="let x of users">
+<li>
+    {{x}}
+</li>
+</ul>
+
